@@ -1,0 +1,10 @@
+[core]
+    remote = storage
+['remote "storage"']
+    url = https://remote.dvc.org/dataset-registry/
+['remote "versioned"']
+    url = s3://dave-sandbox-versioning/test/versioned
+    version_aware = true
+['remote "worktree"']
+    url = s3://dave-sandbox-versioning/test/worktree
+    worktree = true
